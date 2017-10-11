@@ -16,6 +16,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SongListActivity"
+            android:label="Song List"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".SongDetailsActivity"
+            android:label="Song Details"
+            android:parentActivityName=".SongListActivity"/>
+
+        <activity
+            android:name=".PaymentActivity"
+            android:label="Payment"
+            android:parentActivityName=".SongDetailsActivity"
+            />
     </application>
 
 </manifest>
